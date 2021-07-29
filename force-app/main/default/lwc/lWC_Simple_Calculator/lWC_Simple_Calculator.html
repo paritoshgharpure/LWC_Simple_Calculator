@@ -1,0 +1,13 @@
+<template>
+    <!-- <lightning-button onclick={first} label="initial"></lightning-button> -->
+    <lightning-input label="number1" name="num1" onchange={handleNumber1}></lightning-input>
+
+    <strong>[{currentOperator}]</strong>
+
+    <lightning-input label="number2" name="num2" onchange={handleNumber2}></lightning-input>
+
+    <lightning-radio-group name="operatorGroup" label="Operation" options={operatorList} value={currentOperator} required type="button" onchange={handleOperators}></lightning-radio-group>
+
+    <lightning-input readonly label={result}></lightning-input>
+
+</template>
